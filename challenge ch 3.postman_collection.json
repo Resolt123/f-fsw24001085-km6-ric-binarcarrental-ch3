@@ -1,0 +1,126 @@
+{
+	"info": {
+		"_postman_id": "b693f0b5-8621-4a80-8ccc-7dae9beae99e",
+		"name": "challenge ch 3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33599971"
+	},
+	"item": [
+		{
+			"name": "list car",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/cars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "detail car",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/cars/9ff03bbc-b18c-4ba7-8f3a-4c4b5c2f6c77",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cars",
+						"9ff03bbc-b18c-4ba7-8f3a-4c4b5c2f6c77"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"plate\": \"punya richard\",\r\n        \"manufacture\": \"Ford tes\",\r\n        \"model\": \"F150 tes\",\r\n        \"image\": \"./images/car01.min.jpg\",\r\n        \"rentPerDay\": 200000,\r\n        \"capacity\": 2,\r\n        \"description\": \" Brake assist. Leather-wrapped shift knob. Glove box lamp. Air conditioning w/in-cabin microfilter.\",\r\n        \"availableAt\": \"2022-03-23T15:49:05.563Z\",\r\n        \"transmission\": \"Automatic\",\r\n        \"available\": true,\r\n        \"type\": \"Sedan\",\r\n        \"year\": 2022,\r\n        \"options\": [\r\n            \"Cruise Control\",\r\n            \"Tinted Glass\",\r\n            \"Tinted Glass\",\r\n            \"Tinted Glass\",\r\n            \"AM/FM Stereo\"\r\n        ],\r\n        \"specs\": [\r\n            \"Brake assist\",\r\n            \"Leather-wrapped shift knob\",\r\n            \"Glove box lamp\",\r\n            \"Air conditioning w/in-cabin microfilter\",\r\n            \"Body color folding remote-controlled pwr mirrors\",\r\n            \"Dual-stage front airbags w/occupant classification system\"\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/cars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit car",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"plate\": \"punya richard\",\r\n        \"manufacture\": \"Ford tes\",\r\n        \"model\": \"F150 tes\",\r\n        \"image\": \"./images/car01.min.jpg\",\r\n        \"rentPerDay\": 200000,\r\n        \"capacity\": 2,\r\n        \"description\": \" Brake assist. Leather-wrapped shift knob. Glove box lamp. Air conditioning w/in-cabin microfilter.\",\r\n        \"availableAt\": \"2022-03-23T15:49:05.563Z\",\r\n        \"transmission\": \"Automatic\",\r\n        \"available\": true,\r\n        \"type\": \"Sedan\",\r\n        \"year\": 2022,\r\n        \"options\": [\r\n            \"Cruise Control\",\r\n            \"Tinted Glass\",\r\n            \"Tinted Glass\",\r\n            \"Tinted Glass\",\r\n            \"AM/FM Stereo\"\r\n        ],\r\n        \"specs\": [\r\n            \"Brake assist\",\r\n            \"Leather-wrapped shift knob\",\r\n            \"Glove box lamp\",\r\n            \"Air conditioning w/in-cabin microfilter\",\r\n            \"Body color folding remote-controlled pwr mirrors\",\r\n            \"Dual-stage front airbags w/occupant classification system\"\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/cars/6e2bc663-5197-441a-957b-bc75e4a2da7c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cars",
+						"6e2bc663-5197-441a-957b-bc75e4a2da7c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete car",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/cars/6e2bc663-5197-441a-957b-bc75e4a2da7c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"cars",
+						"6e2bc663-5197-441a-957b-bc75e4a2da7c"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
