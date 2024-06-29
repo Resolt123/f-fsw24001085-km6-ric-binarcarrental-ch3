@@ -1,6 +1,5 @@
 import Cars from "./cars.js";
 
-let list = [];
 let waktu = document.getElementById("waktu");
 let penumpang = document.getElementById("penumpang");
 let tanggal = document.getElementById("tanggal");
@@ -16,17 +15,15 @@ let final = ``;
 //   return data;
 // };
 
-async function load() {
+button.addEventListener("click", async (event) => {
+  event.preventDefault;
+
+  let list = [];
+
   const cars = await Cars.getCarsData();
-  console.log(cars);
   cars.map((car) => {
     list.push(car);
   });
-}
-load();
-
-button.addEventListener("click", (event) => {
-  event.preventDefault;
 
   let searchedcar = [];
   let tempo = ``;
